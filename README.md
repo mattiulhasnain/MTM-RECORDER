@@ -46,11 +46,46 @@ FIVE FEBS
 - Nvidia NVENC / AMD VCE / Intel QSV (for GPU-accelerated recording)
 - Qt / Electron / WPF (for UI development)
 
-## Getting Started
-1. Clone the repository
-2. Install dependencies
-3. Build the project
-4. Run the application
+## Installation
+
+### Prerequisites
+- CMake (version 3.10 or higher)
+- Git
+- C++ Compiler (GCC/Clang/MSVC)
+- NSIS (for creating the installer)
+
+### Building from Source
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/mattiulhasnain/MTM-RECORDER.git
+   cd MTM-RECORDER
+   ```
+
+2. Create a build directory and configure the project:
+   ```bash
+   mkdir build
+   cd build
+   cmake ..
+   ```
+
+3. Build the project:
+   ```bash
+   cmake --build .
+   ```
+
+4. Create the installer:
+   ```bash
+   makensis ../installer.nsi
+   ```
+
+### Running the Application
+After installation, you can run the application from the Start Menu or by executing the installed executable.
+
+### Uninstalling
+To uninstall, use the uninstaller from the Start Menu or run:
+```bash
+/path/to/installation/Uninstall.exe
+```
 
 ## Contributing
 Contributions are welcome! Please read the [CONTRIBUTING.md](CONTRIBUTING.md) file for details.
