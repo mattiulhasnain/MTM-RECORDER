@@ -1,4 +1,4 @@
-# MTM Recorder 🎥🔥
+good # MTM Recorder 🎥🔥
 
 A powerful Windows screen recorder with advanced features like DRM bypass, multi-monitor support, and high-quality recording.
 
@@ -58,6 +58,12 @@ FIVE FEBS
 1. Install Visual Studio 2022 with C++ development tools
 2. Install Windows SDK
 3. Install CMake (version 3.10 or higher)
+4. Install FFmpeg libraries:
+   - Download FFmpeg from https://ffmpeg.org/download.html
+   - Extract to a directory (e.g., C:\ffmpeg)
+   - Add FFmpeg bin directory to system PATH
+   - Install pkg-config for Windows
+5. Install NSIS for creating the installer
 
 ### Building from Source
 1. Clone the repository:
@@ -66,22 +72,38 @@ FIVE FEBS
    cd MTM-RECORDER
    ```
 
-2. Create a build directory and configure the project:
+2. Set up FFmpeg environment:
+   ```bash
+   set FFMPEG_DIR=C:\path\to\ffmpeg
+   set PKG_CONFIG_PATH=%FFMPEG_DIR%\lib\pkgconfig
+   ```
+
+3. Create a build directory and configure the project:
    ```bash
    mkdir build
    cd build
    cmake ..
    ```
 
-3. Build the project:
+4. Build the project:
    ```bash
    cmake --build .
    ```
 
-4. Create the installer:
+5. Create the installer:
    ```bash
    makensis ../installer.nsi
    ```
+
+### Running the Application
+1. After installation, launch MTM Recorder from the Start Menu
+2. Configure recording settings:
+   - Select capture area (full screen, window, or region)
+   - Set frame rate (default: 30 FPS)
+   - Choose output format (MP4, AVI, MKV)
+3. Start recording using the Record button or hotkey
+4. Stop recording when finished
+5. Find your recordings in the specified output directory
 
 ### Running the Application
 After installation, you can run the application from the Start Menu or by executing the installed executable.
