@@ -3,8 +3,17 @@
 #include "ui.h"
 #include <thread>
 #include <chrono>
+extern "C" {
+#include <libavcodec/avcodec.h>
+#include <libavformat/avformat.h>
+#include <libswscale/swscale.h>
+}
 
 int main() {
+    // Initialize FFmpeg
+    av_register_all();
+    avformat_network_init();
+    
     std::cout << "MTM Recorder - Starting application..." << std::endl;
 
     // Initialize the recorder

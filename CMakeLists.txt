@@ -8,6 +8,10 @@ if(NOT WIN32)
     message(FATAL_ERROR "This project can only be built on Windows systems")
 endif()
 
+# Find FFmpeg
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(FFMPEG REQUIRED libavcodec libavformat libavutil libswscale)
+
 # Windows-specific configuration
 set(Gdiplus_LIBRARIES gdiplus)
 set(Gdiplus_INCLUDE_DIRS "")
@@ -30,7 +34,13 @@ include_directories(include)
 target_link_libraries(MTM_Recorder
     PRIVATE
     ${Gdiplus_LIBRARIES}
+    ${FFMPEG_LIBRARIES}
     winmm
     ole32
     uuid
+)
+
+target_include_directories(MTM_Recorder
+    PRIVATE
+    ${FFMPEG_INCLUDE_DIRS}
 )
