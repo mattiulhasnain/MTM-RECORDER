@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/MTM_Recorder.dir/src/main.cpp.o CMakeFiles/MTM_Recorder.dir/src/recorder.cpp.o CMakeFiles/MTM_Recorder.dir/src/ui.cpp.o  -o MTM_Recorder 

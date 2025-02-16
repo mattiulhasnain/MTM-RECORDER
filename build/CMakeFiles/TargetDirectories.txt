@@ -1,0 +1,3 @@
+/workspaces/MTM-RECORDER/build/CMakeFiles/rebuild_cache.dir
+/workspaces/MTM-RECORDER/build/CMakeFiles/edit_cache.dir
+/workspaces/MTM-RECORDER/build/CMakeFiles/MTM_Recorder.dir

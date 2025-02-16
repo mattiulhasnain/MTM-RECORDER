@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/recorder.h
+
+../include/ui.h
+
+/workspaces/MTM-RECORDER/src/main.cpp
+iostream
+-
+recorder.h
+/workspaces/MTM-RECORDER/src/recorder.h
+ui.h
+/workspaces/MTM-RECORDER/src/ui.h
+
+/workspaces/MTM-RECORDER/src/recorder.cpp
+recorder.h
+/workspaces/MTM-RECORDER/src/recorder.h
+iostream
+-
+
+/workspaces/MTM-RECORDER/src/ui.cpp
+ui.h
+/workspaces/MTM-RECORDER/src/ui.h
+iostream
+-
+
