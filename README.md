@@ -46,13 +46,18 @@ FIVE FEBS
 - Nvidia NVENC / AMD VCE / Intel QSV (for GPU-accelerated recording)
 - Qt / Electron / WPF (for UI development)
 
+## System Requirements
+- Windows 10 or later
+- Visual Studio 2022 or later
+- Windows SDK
+- CMake 3.10 or later
+
 ## Installation
 
 ### Prerequisites
-- CMake (version 3.10 or higher)
-- Git
-- C++ Compiler (GCC/Clang/MSVC)
-- NSIS (for creating the installer)
+1. Install Visual Studio 2022 with C++ development tools
+2. Install Windows SDK
+3. Install CMake (version 3.10 or higher)
 
 ### Building from Source
 1. Clone the repository:

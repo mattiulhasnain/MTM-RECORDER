@@ -7,6 +7,14 @@
 #IncludeRegexTransform: 
 
 ../include/recorder.h
+windows.h
+-
+gdiplus.h
+-
+string
+-
+vector
+-
 
 ../include/ui.h
 
@@ -17,16 +25,20 @@ recorder.h
 /workspaces/MTM-RECORDER/src/recorder.h
 ui.h
 /workspaces/MTM-RECORDER/src/ui.h
+thread
+-
+chrono
+-
 
 /workspaces/MTM-RECORDER/src/recorder.cpp
 recorder.h
 /workspaces/MTM-RECORDER/src/recorder.h
 iostream
 -
-
-/workspaces/MTM-RECORDER/src/ui.cpp
-ui.h
-/workspaces/MTM-RECORDER/src/ui.h
-iostream
+fstream
+-
+chrono
+-
+thread
 -
 
